@@ -12,152 +12,172 @@
 <body>
 
     <header class="header">
-        <div class="header__logo">
-            <img src="./images/bonsai-logo.svg" alt="logo image" class="header__logo__image">
+        <div class="container">
+            <div class="header__logo">
+                <img src="./images/bonsai-logo.svg" alt="logo image" class="header__logo__image">
+            </div>
+
+            <nav class="nav">
+                <a href="" class="nav__link">Product</a>
+                <a href="" class="nav__link">Templates</a>
+                <a href="" class="nav__link">Pricing</a>
+                <a href="" class="nav__link">Reviews</a>
+            </nav>
+
+            <div class="header__right-column">
+                <a href="" class="header__nav-item inverted w-button" role="button">Log in</a>
+                <a href="" class="header__nav-item w-button" role="button">Start Free</a>
+            </div>
         </div>
 
-        <nav class="nav">
-            <a href="" class="nav__link">Product</a>
-            <a href="" class="nav__link">Templates</a>
-            <a href="" class="nav__link">Pricing</a>
-            <a href="" class="nav__link">Reviews</a>
-        </nav>
-
-        <div class="header__right-column">
-            <a href="" class="header__nav-item inverted w-button" role="button">Log in</a>
-            <a href="" class="header__nav-item w-button" role="button">Start Free</a>
-        </div>
     </header>
 
     <section class="plansPricing">
-        <div class="plansPricing_top">
-            <div class="plansPricing__left-column">
+        <div class="container">
+            <div class="plansPricing__top">
                 <h2 class="plansPricing__title">Plans & Pricing</h2>
-            </div>
-            <div class="plansPricing__right-column">
-                <div class="plansPricing__right-column-container">
-                    <div class="plansPricing__right-column-monthsFree">
 
-                    </div>
-                    <div class="plansPricing__right-column-switchArea">
+                <div class="plansPricing__controls">
+                    <span class="plansPricing__promo">2 MONTHS FREE!</span>
 
-                        <label for="" class="plansPricing__right-column-switchArea-monthly">MONTHLY</label>
-                        <input type="checkbox" class="plansPricing__right-column-switchArea-switch">
-                        <label for="" class="plansPricing__right-column-switchArea-yearly">YEARLY</label>
-                    </div>
-                    <div class="plansPricing__right-column-dottedLine">
-
+                    <div class="plansPricing__toggle">
+                        <span class="plansPricing__toggle-label-monthly">MONTHLY</span>
+                        <label class="plansPricing__switch">
+                            <input type="checkbox" id="billingToggle">
+                            <span class="plansPricing__switch-slider"></span>
+                        </label>
+                        <span class="plansPricing__toggle-label-yearly">YEARLY</span>
                     </div>
                 </div>
+
             </div>
 
 
-        </div>
-
-        <div class="plansPricing__cards">
-            <div class="plansPricing__card">
-                <div class="plansPricing__card-container">
+            <div class="plansPricing__cards">
+                <div class="plansPricing__card">
                     <h3 class="plansPricing__card-title">Workflow</h3>
-                    <div class="plansPricing__card-containerPrice">
-                        <a href="" class="plansPricing__card-sign">$</a>
-                        <a href="" class="plansPricing__card-price">19</a>
-                        <a href="" class="plansPricing__card-month">/MONTH</a>
-                    </div>
-                    <div class="plansPricing__card_line">
 
-                    </div>
-
-                    <div class="plansPricing__card-list">
-
+                    <div class="plansPricing__card-container">
+                        <div class="plansPricing__card-price">
+                            <span class="plansPricing__card-currency">$</span>
+                            <span class="plansPricing__card-amount">19</span>
+                            <span class="plansPricing__card-period">/MONTH</span>
+                        </div>
                     </div>
 
-                    <a href="" class="plansPricing__card-button">Start Free</a>
+
+                    <hr class="plansPricing__card-divider">
+
+                    <ul class="plansPricing__card-features">
+                        <li>Unlimited Clients & Projects</li>
+                        <li>Proposals</li>
+                        <li>Contracts</li>
+                        <li>Invoicing & Payments</li>
+                        <li>Client CRM</li>
+                        <li>Project Management</li>
+                        <li>Task & Time Tracking</li>
+                        <li>iOS, Android, Chrome, & Mac Apps</li>
+                    </ul>
+
+                    <a href="#" class="header__nav-item w-button">START FREE</a>
                 </div>
 
-            </div>
+                <div class="plansPricing__card plansPricing__card--popular">
 
-            <div class="plansPricing__card">
-                <div class="plansPricing__card-container">
                     <h3 class="plansPricing__card-title">Workflow Plus</h3>
-                    <div class="plansPricing__card-containerPrice">
-                        <a href="" class="plansPricing__card-sign">$</a>
-                        <a href="" class="plansPricing__card-price">29</a>
-                        <a href="" class="plansPricing__card-month">/MONTH</a>
-                    </div>
-                    <div class="plansPricing__card_line">
 
+                    <div class="plansPricing__card-price">
+                        <span class="plansPricing__card-currency">$</span>
+                        <span class="plansPricing__card-amount">29</span>
+                        <span class="plansPricing__card-period">/MONTH</span>
                     </div>
 
-                    <div class="plansPricing__card-list">
+                    <hr class="plansPricing__card-divider">
 
-                    </div>
+                    <ul class="plansPricing__card-features">
+                        <li>Everything in Workflow, plus...</li>
+                        <li>White-labelled client experience</li>
+                        <li>Client forms and questionnaires <span class="plansPricing__card-tag">New</span></li>
+                        <li>Workflow automations</li>
+                        <li>Subcontracting (client-mode)</li>
+                        <li>Calendly integration</li>
+                        <li>Client portal</li>
+                        <li>Priority support</li>
+                    </ul>
 
-                    <a href="" class="plansPricing__card-button">Start Free</a>
+                    <a href="#" class="header__nav-item w-button">START FREE</a>
                 </div>
-
             </div>
         </div>
+
     </section>
 
     <section class="info">
-        <div class="info__top">
-            <h2 class="info__top-text">Super charge your work with add-ons</h2>
+        <div class="container">
+            <div class="info__top">
+                <h2 class="info__top-text">Super charge your work with add-ons</h2>
+            </div>
+
+            <div class="info__cards-container">
+                <div class="info__card">
+                    <div class="info__card-leftColumn">
+                        <a href="" class="info__card-leftColumn-upperText info__card-text">Collaborators</a>
+                        <a href="" class="info__card-leftColumn-bottomText info__card-text">Invite other users to
+                            specific projects for
+                            limited access and functionality.</a>
+                    </div>
+                    <div class="info__card-rightColumn">
+                        <div class="info__card-rightColumn-priceContainer-price">
+                            <h3 class="info__card-rightColumn-price">Free</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__card">
+                    <div class="info__card-leftColumn">
+                        <a href="" class="info__card-leftColumn-upperText info__card-text">Partners</a>
+                        <a href="" class="info__card-leftColumn-bottomText info__card-text">Invite other users for full
+                            account access
+                            and
+                            company management.</a>
+                    </div>
+                    <div class="info__card-rightColumn">
+                        <div class="info__card-rightColumn-priceContainer">
+                            <span class="info__card-rightColumn-priceContainer-price info__card-text">$9</span>
+                            <span class="info__card-rightColumn-priceContainer-month">MONTH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__card">
+                    <div class="info__card-leftColumn">
+                        <a href="" class="info__card-leftColumn-upperText info__card-text">Bonsai Tax</a>
+                        <a href="" class="info__card-leftColumn-bottomText info__card-text">Track expenses, identify
+                            write-offs, and
+                            estimate quarterly taxes easily</a>
+                        <a href="" class="info__card-leftColumn-bottomTextLabel info__card-text">LEARN MORE ></a>
+
+                    </div>
+                    <div class="info__card-rightColumn">
+                        <div class="info__card-rightColumn-priceContainer">
+                            <span class="info__card-rightColumn-priceContainer-price">$10</span>
+                            <span class="info__card-rightColumn-priceContainer-month">MONTH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="info__cards-container">
-            <div class="info__card">
-                <div class="info__card-leftColumn">
-                    <a href="" class="info__card-leftColumn-upperText">Collaborators</a>
-                    <a href="" class="info__card-leftColumn-bottomText">Invite other users to specific projects for
-                        limited access and functionality.</a>
-                </div>
-                <div class="info__card-rightColumn">
-                    <div class="info__card-rightColumn-priceContainer">
-                        <h3 class="info__card-rightColumn-price">Free</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info__card">
-                <div class="info__card-leftColumn">
-                    <a href="" class="info__card-leftColumn-upperText">Partners</a>
-                    <a href="" class="info__card-leftColumn-bottomText">Invite other users for full account access and
-                        company management.</a>
-                </div>
-                <div class="info__card-rightColumn">
-                    <div class="info__card-rightColumn-priceContainer">
-                        <div class="info__card-rightColumn-priceContainer-price">$9</div>
-                        <div class="info__card-rightColumn-priceContainer-month">MONTH</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info__card">
-                <div class="info__card-leftColumn">
-                    <a href="" class="info__card-leftColumn-upperText">Bonsai Tax</a>
-                    <a href="" class="info__card-leftColumn-bottomText">Track expenses, identify write-offs, and
-                        estimate quarterly taxes easily</a>
-                    <a href="" class="info__card-leftColumn-bottomTextLabel">Learn More ></a>
-
-                </div>
-                <div class="info__card-rightColumn">
-                    <div class="info__card-rightColumn-priceContainer">
-                        <div class="info__card-rightColumn-priceContainer-price">$10</div>
-                        <div class="info__card-rightColumn-priceContainer-month">MONTH</div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section class="heroBanner">
-        <div class="heroBanner__container">
+        <div class="container heroBanner__container">
             <div class="heroBanner__left-column">
-                <a href="" class="heroBanner__left-column-upperText">It's your business.</a>
-                <a href="" class="heroBanner__left-column-bottomText">We're here to help it grow</a>
+                <a href="" class="heroBanner__left-column-upperText heroBanner__text">It's your business.</a>
+                <a href="" class="heroBanner__left-column-bottomText heroBanner__text">We're here to help it grow</a>
             </div>
             <div class="heroBanner__right-column">
-                <a href="" class="heroBanner__right-column-button">Start Free</a>
+                <a href="" class="header__nav-item w-button">Start Free</a>
             </div>
         </div>
     </section>
