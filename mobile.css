@@ -1,0 +1,143 @@
+@media screen and (max-width: 920px) {
+
+    .container {
+        max-width: none;
+    }
+
+    body,
+    html {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header__logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav__link {
+        font-size: 14px;
+    }
+
+    .header__right-column {
+        justify-content: center;
+    }
+
+    .header__nav-item {
+        margin-left: 0.5rem;
+        padding: 10px 15px;
+        font-size: 11px;
+    }
+
+
+    .plansPricing__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plansPricing__controls {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0rem;
+    }
+
+    .plansPricing__promo {
+        position: static;
+    }
+
+
+    .plansPricing__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plansPricing__card {
+        width: calc(100% - 5rem) !important;
+    }
+
+    .footer .container {
+        flex-direction: row;
+        align-items: left;
+        gap: 1rem;
+    }
+
+    .footer__column h4 {
+        font-size: large;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .info__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__card-rightColumn {
+        padding-top: 10px;
+    }
+
+    .heroBanner__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem
+    }
+
+    .heroBanner__left-column {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .heroBanner__right-column {
+        padding-right: 0;
+        padding-top: 1rem;
+    }
+
+    .heroBanner__text {
+        text-align: center;
+    }
+
+    .faq__item-left-column {
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .faq__item-right-column {
+        text-align: right;
+        padding-right: 0px;
+    }
+
+    .faq__title {
+        text-align: center;
+    }
+
+
+    .footer .container {
+        flex-direction: column;
+        align-items: left;
+        gap: 1rem;
+    }
+
+    .footer__column h4 {
+        font-size: large;
+    }
+}

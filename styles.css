@@ -1,7 +1,7 @@
 body,
 html {
-    margin: 0;
-    padding: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
     background: white;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
@@ -15,19 +15,20 @@ html {
     top: 0;
     z-index: 2;
     background-color: white;
-    padding: 10px;
+
 }
 
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 0 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .header__logo__image {
@@ -85,11 +86,7 @@ html {
     color: white;
 }
 
-.plansPricing {
-    max-width: 1200px;
-    justify-content: center;
-    margin: 0 auto;
-}
+
 
 .plansPricing__top {
     margin-top: 80px;
@@ -142,7 +139,7 @@ html {
     border-radius: 3px;
     padding: 40px;
     box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
-    width: 500px;
+    width: 50%;
     border: 1px solid rgb(223, 223, 223);
 }
 
@@ -289,4 +286,119 @@ html {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.heroBanner__left-column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    gap: 1rem;
+}
+
+.heroBanner__text {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.heroBanner__right-column {
+    padding-right: 75px;
+}
+
+.faq {
+    padding-top: 50px;
+}
+
+.faq__container {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.faq__items-container {
+    width: 100%;
+    padding-top: 20px
+}
+
+.faq__item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    gap: 1rem;
+}
+
+.faq__item-left-column {
+    text-align: left;
+    padding-left: 110px;
+}
+
+.faq__item-right-column {
+    text-align: right;
+    padding-right: 110px;
+}
+
+.faq__title {
+    color: #00b289;
+}
+
+.faq__item-left-column {
+    display: flex;
+    align-items: left;
+}
+
+.faq__item-text {
+    color: #4c4d5f
+}
+
+.faq__item-right-column {
+    color: lightgray;
+}
+
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+    gap: 10rem
+}
+
+.footer__column {
+    flex: 1;
+}
+
+.footer__column h4 {
+    color: #4c4d5f;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.footer__column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__column li {
+    margin-bottom: 12px;
+}
+
+.footer__column a {
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer__column a:hover {
+    color: #00b289;
 }
