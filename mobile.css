@@ -141,4 +141,8 @@
     .footer__column h4 {
         font-size: large;
     }
+
+    .footer__column li {
+        margin-bottom: 5px;
+    }
 }
